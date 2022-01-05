@@ -41,7 +41,9 @@
       }
     </style>
   </head>
+  <body style="background-color:#d9d9d9;">
   <body>
+
     <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
       <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="http://danieleventuri.altervista.org/dps.shtml" target="_blank">Sapienza University | Data Privacy and security</a>
       <ul class="navbar-nav px-3">
@@ -54,7 +56,28 @@
       <div class="row">
         <main role="main" class="col-lg-12 d-flex justify-content-center">
           <div id="loader" class="text-center">
-            <p class="text-center">Ethereum Smart Contract</p>
+            <p class="text-center" style="font-size:30px;font-style:bold;color: blue;">
+              Ethereum Smart Contract</p>
+              <p class="text-center" style="font-size:15px;"> Visit DPS Website </p>
+              <p>
+                <label for="tname">Click on the button to add a new task</label><br>
+              </p>
+              <p>
+                <button id="tname">Task</button>
+              </p>
+              <p>
+                <form>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="tname"> <span id="outputTasks">________</span></label><br></label><br>
+                <!-- <label for="tname"> <span id="outputTasks">____</span></label><br> -->
+              </p>
+            </p>
+            <script>
+              document.getElementById("tname").onclick = function(){
+                var tname = prompt("Add a task");
+                document.getElementById("outputTasks").innerText = tname;
+              }
+              </script>
           </div>
           <div id="content">
             <form onSubmit="App.createTask(); return false;">
