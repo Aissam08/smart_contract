@@ -1,17 +1,15 @@
-inputValue = document.getElementById("myTextInputID").value;
-
 App = {
   loading: false,
   contracts: {},
 	load: async() => {
 		// await App.loadWeb3()
 		await App.loadAccount()
-    await App.loadContract()
+    // await App.loadContract()
     await App.render()
     await App.renderTasks()
 	},
 
-  // load blockchain connexion
+  // load blockchain connexion - DOES NOT WORKS
   loadWeb3: async () => {
     if (typeof web3 !== 'undefined') {
       App.web3Provider = web3.ethereum
@@ -113,6 +111,20 @@ App = {
       App.setLoading(true)
       const content = $('#newTask').val()
       await App;todolist.createTask(content)
+      window.location.reload()
+    }
+
+    taggleCompleted: async() => {
+      App.setLoading(true)
+      const taskId = e.target.name
+      await App.ToDolist.taggleCompleted(taskId)
+      window.location.reload()
+    }
+
+    sendTransaction: async() =>{
+      App.setLoading(true)
+      const add = e.target.address
+      await App.ToDolist.sendEther(add)
       window.location.reload()
     }
 
