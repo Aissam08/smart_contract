@@ -86,7 +86,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -115,7 +116,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -7490,15 +7492,41 @@
           ],
           "name": "TaskCreated",
           "type": "event"
+        },
+        "0x179e9a20067b2239cff1f72c04b7e385951d4af65c597f18abd46f99511a56b3": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "address payable",
+              "name": "recipient",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "bool",
+              "name": "completed",
+              "type": "bool"
+            }
+          ],
+          "name": "TransactionDone",
+          "type": "event"
         }
       },
       "links": {},
-      "address": "0x5fD42F6581f0a2980598998812Eb8739968EFd81",
-      "transactionHash": "0x6529ad2feafb80308e594db13d6d17d700e481fb3073356c559c26448fcbb23f"
+      "address": "0xFE521f8dCA1564674493B23FCF23bD030ADb5d04",
+      "transactionHash": "0x87e98a9df5b68225a0d5dad30c00b3bb8d563328171126d4f08a0ea2cf9c1a0b"
     }
   },
   "schemaVersion": "3.4.3",
-  "updatedAt": "2022-01-06T13:41:34.527Z",
+  "updatedAt": "2022-01-06T23:19:56.069Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},

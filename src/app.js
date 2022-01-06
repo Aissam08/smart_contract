@@ -121,7 +121,7 @@ App = {
       window.location.reload()
     }
 
-    sendTransaction: async() =>{
+    makeTransaction: async() =>{
       App.setLoading(true)
       const add = e.target.address
       await App.ToDolist.sendEther(add)

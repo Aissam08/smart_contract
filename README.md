@@ -1,5 +1,9 @@
-# Ethereum Smart Contract with Truffle
+# Ethereum Smart Contract for a Blockchain Application
 
+
+## Purpose of the project
+
+Create a simple application (ToDo list) powered by **Ethereum Smart Contracts**.
 
 ## Useful tools 
 
@@ -17,7 +21,7 @@ https://trufflesuite.com/ganache/
 
 The crypto wallet Metamask allowed us to connect the blockchain to our browser (Google Chrome) can be installed at the following link: 
 
-https://trufflesuite.com/ganache/
+https://metamask.io/
 
 We also need to get NPM installed for running the project
 
@@ -31,6 +35,8 @@ Once the tools is installed on your computer, you should go in the repository an
 
 3. If you don't have a Metamask account, you have to create one and connect it to the blockchain. The local network used by Ganache is the same : http://127.0.0.1:7545 
 
-4. On Ganache application you can copy one of the user's private key and use it on Metamask to import an account.
+4. Once the Ganache window is opened, you can link the Truffle project to the workspace by adding its truffle-config.js file.
 
-5. You can do it with several account, so the transaction can be done between them.
+5. Copy one of the user's private key and use it on Metamask to import an account.
+
+6. You can do it with several account, so the transaction can be done between them diretly on the browser.
